@@ -14,7 +14,6 @@ const App = () => {
     try {
         const res =await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=21e445b998eb68d1e0b64bdc2ad4d272`);
         setData(res.data)
-        console.log(res.data)
     } catch (error) {
         alert('Enter the city name correctly')
     }

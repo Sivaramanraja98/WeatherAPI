@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url('./assets/Weather.jpg') no-repeat center;
+    background-size: cover cover;
+}
+
+.header{
+    margin: 15px;
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: aliceblue;
+    background: url('./assets/Header.jpg') no-repeat center;
+    background-size: cover;
+    
+}
+
+.form-container{
+    width: 60%;
+    margin: auto;
+    height: 200px;
+    border: 2px solid azure;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    width: 70%;
+}
+
+.input{
+    height:70px;
+    margin: 20px;
+    text-align: center;
+    background:rgba(0,0,0,0);
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 1px solid;
+    color: white;
+}
+
+.btn{
+   width: 50%;
+   margin: auto;
+   height: 50px;
+   background-color:rgb(185, 199, 200);
+   color: rgb(47, 54, 44);
+   font-weight: bold;
+   font-size: 0.7rem;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.container{
+    margin:auto;
+    margin-top: 50px;
+    width: 50%;
+    color: white;
+    height: auto;
+    padding: 10px;
+}
+
+.weathercontainer{
+    border: 2px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.city,.temp,.humid,.weather{
+    padding: 5px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+}
+
+::placeholder { 
+    color:rgb(192, 167, 167);
+    opacity: 1; 
+  }
